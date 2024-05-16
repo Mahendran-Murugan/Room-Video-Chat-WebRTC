@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<LandingScreen />} />
-      <Route path='/room' element={<RoomScreen />} />
+      <Route path='/room/:id' element={<RoomScreen />} />
     </Routes>
   );
 }
