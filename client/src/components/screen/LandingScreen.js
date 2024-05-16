@@ -13,6 +13,7 @@ export const LandingScreen = () => {
     const socket = useSocket();
 
     const handleSubmit = useCallback((e) => {
+        // navigate('/room/mahi')
         e.preventDefault();
         socket.emit('room:join', {
             username,

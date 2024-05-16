@@ -104,22 +104,24 @@ export const RoomScreen = () => {
 
     return (
         <div className='flex items-center justify-center h-screen bg-primary'>
-            <div>
-                <h1 className='text-3xl font-bold underline text-background'>Room</h1>
-                <h4 className='text-background'>{remoteSockId ? "Socket Connected" : "Empty Room"}</h4>
-                {
-                    remoteSockId && <button className='border- border-secondary bg-secondary text-white py-2 px-6 my-2 rounded-lg' onClick={handleVideChat}>Video Chat</button>
-                }
+            <div >
+                <div className='flex flex-col items-center justify-center gap-6'>
+                    <h1 className='text-3xl font-bold text-background'>Room</h1>
+                    <h4 className='text-background'>{remoteSockId ? "Socket Connected" : "Empty Room"}</h4>
+                    {
+                        remoteSockId && <button className='border- border-secondary bg-secondary text-white py-2 px-6 my-2 rounded-lg' onClick={handleVideChat}>Video Chat</button>
+                    }
+                </div>
                 {
                     myStream &&
-                    <div>
+                    <div className='flex flex-col items-center justify-center my-6'>
                         <h1 className='text-xl font-semibold text-background'>You</h1>
                         <ReactPlayer className="border-2 rounded-lg border-background" playing muted height="200px" width="400px" url={myStream} />
                     </div>
                 }
                 {
                     remoteStream &&
-                    <div>
+                    <div className='flex flex-col items-center justify-center my-6'>
                         <h1 className='text-xl font-semibold text-background'>Remote</h1>
                         <ReactPlayer className="border-2 rounded-lg border-background" playing muted height="200px" width="400px" url={remoteStream} />
                     </div>
