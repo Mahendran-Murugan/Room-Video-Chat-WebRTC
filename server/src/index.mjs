@@ -1,18 +1,12 @@
-import express from 'express';
+import { Server, Socket } from 'socket.io';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const PORT = process.env.PORT || 7000
+const PORT = process.env.PORT || 7000;
 
-const app = express();
+const socket = new Server(PORT);
 
-app.use(express.json())
-
-app.listen(PORT, () => {
-    console.log(`Running on http://localhost:${PORT}`)
-})
-
-app.get('/', (req, res) => {
-    return res.status(200).send({ status: "Working" })
+socket.on("connection", (socket) => {
+    console.log(`Socket Connected `, socket.id)
 })
