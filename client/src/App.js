@@ -1,8 +1,14 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { LandingScreen } from './components/screen/LandingScreen';
+import { RoomScreen } from './components/screen/RoomScreen';
+
 function App() {
   return (
-    <>
-      <h1>Hello, World!</h1>
-    </>
+    <Routes>
+      <Route path='/' element={<LandingScreen />} />
+      <Route path='/room' element={<RoomScreen />} />
+    </Routes>
   );
 }
 
