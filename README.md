@@ -16,7 +16,7 @@ Welcome to the Room Video Chat Using WEBRTC repository! This project is a real-t
 
 To set up and run the Room Video Chat App on your local machine, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/Mahendran-Murugan/Room-Video-Chat-WebRTC.git`
+1. Clone this repository
 2. Navigate to the project directory: `cd Room-Video-Chat-WebRTC`
 3. Install dependencies for the backend: `npm install`
 4. Install dependencies for the frontend: `cd client && npm install`
