@@ -1,6 +1,6 @@
-# Room Video Chat App
+# Room Video Chat Using WEBRTC
 
-Welcome to the Room Video Chat App repository! This project is a real-time video chatting application developed using WebRTC and WebSockets technologies. It allows users to have video calls with others in real-time by joining a virtual room.
+Welcome to the Room Video Chat Using WEBRTC repository! This project is a real-time video chatting application developed using WebRTC and WebSockets technologies. It allows users to have video calls with others in real-time by joining a virtual room.
 
 ## Features
 
@@ -36,6 +36,20 @@ Open your browser and visit `http://localhost:3000` to access the application.
 - **WebRTC:** Real-time communication protocol for peer-to-peer audio, video, and data transfer.
   
 - **TailwindCSS:** Utility-first CSS framework for styling the user interface.
+
+## Screenshots
+
+### Home Page
+![Home Page](./screenshots/output1.jpg)
+
+### Room Interface
+![Room Interface](./screenshots/output2.jpg)
+
+### Room Connected Interface
+![Room Connected Interface](./screenshots/output3.jpg)
+
+### Room Video Chat Interface
+![Room Video Chat Interface](./screenshots/output4.jpg)
 
 ## Contributions
 
