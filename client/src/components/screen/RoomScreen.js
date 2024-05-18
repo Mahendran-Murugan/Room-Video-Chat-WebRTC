@@ -116,14 +116,14 @@ export const RoomScreen = () => {
                     myStream &&
                     <div className='flex flex-col items-center justify-center my-6'>
                         <h1 className='text-xl font-semibold text-background'>You</h1>
-                        <ReactPlayer className="border-2 rounded-lg border-background" playing muted height="200px" width="400px" url={myStream} />
+                        <ReactPlayer className="border-2 rounded-lg border-background" playing height="200px" width="400px" url={myStream} />
                     </div>
                 }
                 {
                     remoteStream &&
                     <div className='flex flex-col items-center justify-center my-6'>
                         <h1 className='text-xl font-semibold text-background'>Remote</h1>
-                        <ReactPlayer className="border-2 rounded-lg border-background" playing muted height="200px" width="400px" url={remoteStream} />
+                        <ReactPlayer className="border-2 rounded-lg border-background" playing height="200px" width="400px" url={remoteStream} />
                     </div>
                 }
             </div>
