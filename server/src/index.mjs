@@ -1,13 +1,20 @@
-import { Server, Socket } from 'socket.io';
+import { Server } from 'socket.io';
+import { createServer } from 'http'
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 const PORT = process.env.PORT || 7000;
 
-const socketServer = new Server(PORT, {
+const httpServer = createServer();
+
+const socketServer = new Server(httpServer, {
     cors: true,
 });
+
+httpServer.listen(PORT, () => {
+    console.log(`Server is Running on http://localhost:${PORT}`)
+})
 
 const mapUsernameWithSocketId = new Map();
 const mapSocketIdWithUsername = new Map();
